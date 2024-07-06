@@ -10,7 +10,7 @@ A variety of image files with embedded EXIF metadata. Each folder is titled with
 To produce the exifdata csv file I used:
 
 ```
-exiftool -n -common -csv -r . > exifdata.csv
+exiftool -n -common -GPSLongitude -GPSLatitude -GPSAltitude -csv -r . > exifdata.csv
 ```
 
 ### Copy from an SD card, rename and georeference in one step
