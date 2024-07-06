@@ -20,6 +20,6 @@ Copy from an SD card (Nikon folder example) to another, renaming by datetime and
 ```
 exiftool -r /Volumes/NIKON\ D5600/DCIM/ \ # Source directory
   -d %Y%m%d%H%M%S%%-c.%%le \ # Read capture datetime and produce YYYYMMDDHHMMSS format
-  '-filename<PREFIX_${DateTimeOriginal}' \ # Rename with a prefix (camera / aircraft?) + date
+  '-filename<FOLDER/PREFIX_${DateTimeOriginal}' \ # Rename with folder destination and prefix
   -geotag GPXFILE.gpx # the source GPX file
 ```
